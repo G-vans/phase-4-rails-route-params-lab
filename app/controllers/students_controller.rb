@@ -5,4 +5,9 @@ class StudentsController < ApplicationController
     render json: students
   end
 
+  def show
+    show = Student.find(params[:id])
+    render json: show
+  end
+
 end
